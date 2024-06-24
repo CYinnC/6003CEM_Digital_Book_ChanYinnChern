@@ -26,7 +26,7 @@ const Favorite = () => {
     axios.delete(`http://localhost:5000/favorites/${id}`)
       .then(() => {
         fetchFavorites();
-        console.log(`Bookmark with ID ${id} deleted successfully.`);
+        console.log(`Favorite with ID ${id} deleted successfully.`);
       })
       .catch(error => {
         console.error("Error deleting favorite:", error);
