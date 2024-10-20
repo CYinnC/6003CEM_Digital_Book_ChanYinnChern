@@ -8,7 +8,7 @@ const Favorites = require("./backend/models/schema");
 const app = express();
 const PORT = 5000;
 
-mongoose.connect("mongodb+srv://admin:admin1234@firstcluster.cbhgtbm.mongodb.net/Favorite", {
+mongoose.connect("mongodb+srv://url link here", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
