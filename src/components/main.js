@@ -16,8 +16,7 @@ const searchBook=(evt)=>{
 
     if(evt.key==="Enter")
         {
-            axios.get('https://www.googleapis.com/books/v1/volumes?q='+searchTerm+
-            '&key=AIzaSyDvNlfq9h4XDbIOjZbFEaBhRhp_0D_mCFc'+'&maxResults=20')
+            axios.get('googlebookapihere')
             .then(res=>setData(res.data.items))
             .catch(err=>console.log(err))
         }
